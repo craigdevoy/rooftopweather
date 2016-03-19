@@ -1,0 +1,19 @@
+{
+  "name": "rooftopweather",
+  "homepage": "https://github.com/craigdevoy/rooftopweather",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Craig Devoy",
+    "Greg Dickson"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
