@@ -1,0 +1,33 @@
+{
+  "name": "rooftopweather",
+  "version": "1.0.0",
+  "author": "Craig Devoy, Greg Dickson",
+  "description": "Little hack day weather app for an introduction to APIs.",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-aria": "^1.5.2",
+    "angular-animate": "^1.5.2",
+    "angular-material": "^1.0.6",
+    "angular-messages": "^1.5.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigdevoy/rooftopweather.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigdevoy/rooftopweather/issues"
+  },
+  "homepage": "https://github.com/craigdevoy/rooftopweather#readme"
+}
