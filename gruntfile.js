@@ -9,6 +9,7 @@ module.exports = function(grunt) {
           './bower_components/angular-material/angular-material.js',
           './bower_components/angular-animate/angular-animate.js',
           './bower_components/angular-aria/angular-aria.js',
+          './js/main.js',
           './js/**/*.js'
         ], 
         dest: './dist/application.js'
