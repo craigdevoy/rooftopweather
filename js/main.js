@@ -1,2 +1,2 @@
-var rooftopweather = angular.module('rooftop', []);
+var rooftopweather = angular.module('rooftop', ['ngMaterial']);
 

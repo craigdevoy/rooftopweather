@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         src: [
         //files§
         './css/**/*.css',
-        '.bower_components/angular-material/angular-material.css'
+        './bower_components/angular-material/angular-material.css'
         ], 
         dest: './dist/application.css'
       }

@@ -1,0 +1,6 @@
+rt-weather-card {
+    max-width: 265px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
