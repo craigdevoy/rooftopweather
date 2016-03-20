@@ -4,15 +4,18 @@
 <link rel="stylesheet" type="text/css" href="dist/application.min.css">
 </head>
 <body ng-app="rooftop">
+<div id="container">
+	<div id="logo"><img src="images/roof.png"></div>
+	<h1>Welcome to Rooftop Weather</h1>
+	<p>Built with <img src="images/coffee.png"> - <a href="http://openweathermap.org/api" target="_blank"> Open Weather API </a> - <a href="https://angularjs.org/" target="_blank"> AngularJS </a> - <a href="https://material.angularjs.org/latest/" target="_blank"> Angular Material </a></p>
 
 	<div ng-controller="WeatherController">
-			
-		<md-input-container>
-		  <label>Geeze yer city like:</label>
-		  <input type="text" ng-model="city" required>
-		</md-input-container>
 
-		<md-button ng-click="getWeatherByCity()">Click this</md-button>
+		<md-input-container name="cityInput">
+		  <label>Pick a city:</label>
+		  <input name="city" ng-model="city" required minlength="1">
+		</md-input-container>
+		<md-button ng-click="getWeatherByCity()">Find Weather</md-button>
 
 		<div class="clear"></div>
 
@@ -25,8 +28,19 @@
 <script type="text/ng-template" id="weather-card.html">
 	<md-card>
 	 <md-card-content>
-	   <h2>{{data.name}}</h2>
-	   <p>{{data.weather[0].description}}</p>
+
+	   <h2>{{data.name | uppercase}}</h2>
+	   <p>Description: {{data.weather[0].description}}</p>
+	   <h3>Temperature</h3>
+	   <div id="temper-data">
+	   <p>Temperature: {{data.main.temp}}</p>
+	   <p>Humidity: {{data.main.humidity}}</p>
+	   </div>
+	   <h3>Wind:</h3>
+	   <div id="wind-data">
+	   <p>Speed: {{data.wind.speed}}</p>
+	   <p>Degree: {{data.wind.deg}}</p>
+	   </div>
 	 </md-card-content>
 	 <md-card-actions layout="row" layout-align="end center">
           <md-button ng-click="remove()">Remove</md-button>
@@ -35,9 +49,7 @@
 	   Rooftop Weather Class
 	 </md-card-footer> -->
 </md-card>
-	
-
 </script>
-
+</div>
 </body>
 </html>

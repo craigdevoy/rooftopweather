@@ -1,6 +1,16 @@
 rt-weather-card {
-    max-width: 265px;
+    max-width: 350px;
     overflow: hidden;
     display: block;
     float: left;
 }
+
+md-card md-card-content {
+    display: block;
+    padding: 5px 40px;
+    background-color: #FF5722;
+    color: #fff;
+    border-top: 10px solid #E64A19;
+}
+
+

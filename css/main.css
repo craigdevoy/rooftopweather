@@ -1,0 +1,25 @@
+div#container {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    border-bottom: 2px solid #DA3818;
+    width: 50%;
+}
+
+#logo {
+	float: right;
+}
+
+button.md-button.md-ink-ripple {
+    background-color: #448AFF;
+    color: #fff;
+}
+
+button.md-button.md-ink-ripple:hover {
+    background-color: rgba(68, 138, 255, 0.6);
+}
